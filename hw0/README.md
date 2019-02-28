@@ -32,7 +32,7 @@ http://cs231n.github.io/python-numpy-tutorial/.
 ## Audio Representations
 Your first mission is loading audio files and displaying it  as 2D time-frequency representations.  The tutorial code is provided in the following link.
 
-[GCT634 (2018) Audio Representations.ipynb](https://drive.google.com/file/d/1ZqB1u5YAVLWVLyRGdeHeM40RVahN9FLJ/view?usp=sharing)
+[GCT634 Audio Representations.ipynb](https://drive.google.com/file/d/1ZqB1u5YAVLWVLyRGdeHeM40RVahN9FLJ/view?usp=sharing)
 
 Note that it is a cloud-based Jupiter notebook, **Google Colab** that I mentioned in the class.  You can run each section of the code one by one by pressing the "run cell" buttons on the web page. If you want to run the code on your local Python environment, skip the first section ( 1. Install Librosa and FFmpeg ), copy each of the section to your editor and run it. 
 
