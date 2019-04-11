@@ -1,5 +1,5 @@
-# Homework #2: Genre Classification
-Genre classification is an important task that can be used many music applications. Your mission is to build your own Convolutional Neural Network (CNN) model to classify audio files into different music genres. Specifically, the goals of this homework are as follows:
+# Homework #2: Music Genre Classification
+Music genre classification is an important task that can be used in many musical applications such as music search or recommender systems. Your mission is to build your own Convolutional Neural Network (CNN) model to classify audio files into different music genres. Specifically, the goals of this homework are as follows:
 
 * Experiencing the whole pipeline of deep learning based system: data preparation, feature extraction, model training and evaluation
 * Getting familiar with the CNN architectures for music classification tasks
