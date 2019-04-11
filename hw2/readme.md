@@ -45,9 +45,9 @@ Now it is your turn. You should improve the baseline code with your own algorith
 
 * You can try different parameters (e.g. hop and window size) to extract mel-spectrogram or different features as input to the network (e.g. MFCC, chroma features ...). 
 
-* You can also use ResNet or other CNN with skip connections. 
+* You can also use ResNet or other CNNs with skip connections. 
 
-* Furthermore, you can augment data using audio effects.
+* Furthermore, you can augment data using digital audio effects.
 
 
 ## Deliverables
