@@ -55,11 +55,11 @@ class Runner(object):
                 self.optimizer.step()
                 self.optimizer.zero_grad()
 
-            epoch_loss += loss.item()
-            epoch_acc += acc
+            epoch_loss += prediction.size(0)*loss.item()
+            epoch_acc += prediction.size(0)*acc
 
-        epoch_loss = epoch_loss/(batch+1)
-        epoch_acc = epoch_acc/(batch+1)
+        epoch_loss = epoch_loss/len(dataloader.dataset)
+        epoch_acc = epoch_acc/len(dataloader.dataset)
 
         return epoch_loss, epoch_acc
 
