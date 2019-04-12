@@ -6,8 +6,9 @@ Music genre classification is an important task that can be used in many musical
 * Using Pytorch in practice
 
 ## Dataset
-We use the [GTZAN](http://marsyas.info/downloads/datasets.html) dataset which has been the most widely used in the music genre classification task. The dataset contains 30-second audio files including 10 different genres including reggae, classical, country, jazz, metal, pop, disco, hiphop, rock and blues. For this homework, we are going to use a subset of GTZAN with only 8 genres. You can download the subset from [this link]().
-
+We use the [GTZAN](http://marsyas.info/downloads/datasets.html) dataset which has been the most widely used in the music genre classification task. 
+The dataset contains 30-second audio files including 10 different genres including reggae, classical, country, jazz, metal, pop, disco, hiphop, rock and blues. 
+For this homework, we are going to use a subset of GTZAN with only 8 genres. You can download the subset from [this link](https://drive.google.com/file/d/1rHw-1NR_Taoz6kTfJ4MPR5YTxyoCed1W/view?usp=sharing).
 
 Once you downloaded the dataset, unzip and move the dataset to your home folder. After you have done this, you should have the following content in the dataset folder.  
 
@@ -48,7 +49,7 @@ If it runs successfully it will create "feature" folder with "train", "valid" an
 Then you can run the training code and it will display the result like below
 ```
 $ python train_test.py
-'''
+...
 [Epoch 23/100] [Train Loss: 0.3131] [Train Acc: 0.9157] [Valid Loss: 1.3355] [Valid Acc: 0.5263]
 [Epoch 24/100] [Train Loss: 0.3390] [Train Acc: 0.8989] [Valid Loss: 1.4338] [Valid Acc: 0.5263]
 Epoch    24: reducing learning rate of group 0 to 1.6000e-05.
