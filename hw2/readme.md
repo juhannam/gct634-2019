@@ -50,16 +50,16 @@ Then you can run the training code and it will display the result like below
 ```
 $ python train_test.py
 ...
-[Epoch 23/100] [Train Loss: 0.3131] [Train Acc: 0.9157] [Valid Loss: 1.3355] [Valid Acc: 0.5263]
-[Epoch 24/100] [Train Loss: 0.3390] [Train Acc: 0.8989] [Valid Loss: 1.4338] [Valid Acc: 0.5263]
-Epoch    24: reducing learning rate of group 0 to 1.6000e-05.
-[Epoch 25/100] [Train Loss: 0.3654] [Train Acc: 0.9101] [Valid Loss: 1.2355] [Valid Acc: 0.5855]
-[Epoch 26/100] [Train Loss: 0.3568] [Train Acc: 0.8820] [Valid Loss: 1.3885] [Valid Acc: 0.5263]
-[Epoch 27/100] [Train Loss: 0.3106] [Train Acc: 0.9213] [Valid Loss: 1.2855] [Valid Acc: 0.5658]
-[Epoch 28/100] [Train Loss: 0.3416] [Train Acc: 0.8961] [Valid Loss: 1.3351] [Valid Acc: 0.5132]
-Epoch    28: reducing learning rate of group 0 to 3.2000e-06.
+[Epoch 22/100] [Train Loss: 0.2772] [Train Acc: 0.9263] [Valid Loss: 1.4282] [Valid Acc: 0.5133]
+[Epoch 23/100] [Train Loss: 0.3096] [Train Acc: 0.9263] [Valid Loss: 1.4084] [Valid Acc: 0.4867]
+Epoch    23: reducing learning rate of group 0 to 1.6000e-05.
+[Epoch 24/100] [Train Loss: 0.2849] [Train Acc: 0.9263] [Valid Loss: 1.3976] [Valid Acc: 0.4933]
+[Epoch 25/100] [Train Loss: 0.3764] [Train Acc: 0.9008] [Valid Loss: 1.4730] [Valid Acc: 0.4867]
+[Epoch 26/100] [Train Loss: 0.3162] [Train Acc: 0.9178] [Valid Loss: 1.3281] [Valid Acc: 0.5533]
+[Epoch 27/100] [Train Loss: 0.2639] [Train Acc: 0.9292] [Valid Loss: 1.3755] [Valid Acc: 0.5133]
+Epoch    27: reducing learning rate of group 0 to 3.2000e-06.
 Training Finished
-Test Accuracy: 62.72%
+Test Accuracy: 63.44%
 ```
 
 ## Improving Algorithms

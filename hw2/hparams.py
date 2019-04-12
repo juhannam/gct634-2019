@@ -55,6 +55,5 @@ class HParams(object):
 				print(var + ': ' + str(value))
 			print('-------------------------')
 
-
 hparams = HParams()
 hparams.parse_argument()
