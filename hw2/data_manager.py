@@ -1,12 +1,11 @@
 '''
 data_manager.py
 
-A file that related with managing data.
+A file that loads saved features and convert them into PyTorch DataLoader.
 '''
 import os
 import numpy as np
-from torch.utils.data import Dataset
-from torch.utils.data import DataLoader
+from torch.utils.data import Dataset, DataLoader
 
 # Class based on PyTorch Dataset
 class GTZANDataset(Dataset):

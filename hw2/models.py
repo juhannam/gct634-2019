@@ -2,7 +2,7 @@
 model_archive.py
 
 A file that contains neural network models.
-You can also implement your own model.
+You can also implement your own model here.
 '''
 import torch.nn as nn
 

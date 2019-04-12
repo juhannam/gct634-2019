@@ -1,9 +1,10 @@
 '''
 hparams.py
 
-A file to set hyper parameters for feature extraction and training.
+A file sets hyper parameters for feature extraction and training.
 You can change parameters using argument.
-For example: python train_test.py --device=1 --batch_size=32.
+For example:
+ $ python train_test.py --device=1 --batch_size=32.
 '''
 import argparse
 
@@ -20,7 +21,7 @@ class HParams(object):
 		self.win_size = 1024
 		self.hop_size = 512
 		self.num_mels = 128
-		self.feature_length = 1024 # audio length = feature_length*hop_size/sample_rate (s)
+		self.feature_length = 1024  # audio length = feature_length*hop_size/sample_rate (s)
 
 		# Training Parameters
 		self.device = 0  # 0: CPU, 1: GPU0, 2: GPU1, ...
@@ -53,6 +54,7 @@ class HParams(object):
 				value = getattr(hparams, var)
 				print(var + ': ' + str(value))
 			print('-------------------------')
+
 
 hparams = HParams()
 hparams.parse_argument()

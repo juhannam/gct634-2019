@@ -18,10 +18,48 @@ blues disco metal ... rock train_filtered.txt valid_filtered.txt test_filtered.t
 $ cd ..      # go back to your home folder for next steps
 ```
 
+## Requirements 
+Before you run baseline code you will need PyTorch. Please install PyTorch from [this link](https://pytorch.org/get-started/locally/).
+We will use PyTorch 1.0 because it is the first official version.
+
+* Python 3.7 (recommended)
+* Numpy
+* Librosa
+* PyTorch 1.0
+
 ## Baseline Code
-Coming soon...
+The baseline code is provided so that you can easily start the homework and also compare with your own algorithm.
+The baseline model extracts mel-spectrogram and has a simple set of CNN model 
+that includes convolutional layer, batch normalization, maxpooling and dense layer.
 
+Baseline code contains following Python files.
+* hparams.py: sets hyper parameters for feature extraction and training
+* feature_extraction.py: extracts mel-spectrogram using Librosa and stores them in the './feature' folder
+* data_manager.py: loads saved features and convert them into PyTorch DataLoader.
+* models.py: contains neural network model.
+* train_test.py: trains model and tests it for genre classification.
 
+Once you download the files, run the feature extraction first.
+```
+$ python feature_extraction.py
+```
+
+If it runs successfully it will create "feature" folder with "train", "valid" and "test" sub folders.
+Then you can run the training code and it will display the result like below
+```
+$ python train_test.py
+'''
+[Epoch 23/100] [Train Loss: 0.3131] [Train Acc: 0.9157] [Valid Loss: 1.3355] [Valid Acc: 0.5263]
+[Epoch 24/100] [Train Loss: 0.3390] [Train Acc: 0.8989] [Valid Loss: 1.4338] [Valid Acc: 0.5263]
+Epoch    24: reducing learning rate of group 0 to 1.6000e-05.
+[Epoch 25/100] [Train Loss: 0.3654] [Train Acc: 0.9101] [Valid Loss: 1.2355] [Valid Acc: 0.5855]
+[Epoch 26/100] [Train Loss: 0.3568] [Train Acc: 0.8820] [Valid Loss: 1.3885] [Valid Acc: 0.5263]
+[Epoch 27/100] [Train Loss: 0.3106] [Train Acc: 0.9213] [Valid Loss: 1.2855] [Valid Acc: 0.5658]
+[Epoch 28/100] [Train Loss: 0.3416] [Train Acc: 0.8961] [Valid Loss: 1.3351] [Valid Acc: 0.5132]
+Epoch    28: reducing learning rate of group 0 to 3.2000e-06.
+Training Finished
+Test Accuracy: 62.72%
+```
 
 ## Improving Algorithms
 Now it is your turn. You should improve the baseline code with your own algorithm. There are many ways to improve it. The followings are possible ideas: 

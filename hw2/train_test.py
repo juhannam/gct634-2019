@@ -88,14 +88,15 @@ def main():
         train_loss, train_acc = runner.run(train_loader, 'train')
         valid_loss, valid_acc = runner.run(valid_loader, 'eval')
 
-        print("[Epoch %d/%d] [Train Loss: %f] [Train Acc: %f] [Valid Loss: %f] [Valid Acc: %f]" %
+        print("[Epoch %d/%d] [Train Loss: %.4f] [Train Acc: %.4f] [Valid Loss: %.4f] [Valid Acc: %.4f]" %
               (epoch + 1, hparams.num_epochs, train_loss, train_acc, valid_loss, valid_acc))
 
         if runner.early_stop(valid_loss, epoch + 1):
             break
 
     test_loss, test_acc = runner.run(test_loader, 'eval')
-    print("[Test Acc: %f]" % (test_acc))
+    print("Training Finished")
+    print("Test Accuracy: %.2f%%" % (100*test_acc))
 
 if __name__ == '__main__':
     main()

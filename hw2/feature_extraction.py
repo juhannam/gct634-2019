@@ -2,6 +2,8 @@
 feature_extraction.py
 
 A file related with extracting feature.
+For the baseline code it loads audio files and extract mel-spectrogram using Librosa.
+Then it stores in the './feature' folder.
 '''
 import os
 import numpy as np
