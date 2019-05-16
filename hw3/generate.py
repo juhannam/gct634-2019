@@ -49,7 +49,7 @@ def generate_sequence(model, sequence_length):
     return None
 
 
-def indices_to_midi(indices, save_path=None, tempo=130):
+def indices_to_midi(indices, save_path=None, init_tempo=130):
   """
   Generates music using a model trained to learn musical patterns of a jazz soloist. Creates an audio stream
 
@@ -115,7 +115,7 @@ def indices_to_midi(indices, save_path=None, tempo=130):
     curr_offset += 4.0
 
   # Initialize tempo of the output stream with 130 bit per minute
-  out_stream.insert(0.0, tempo.MetronomeMark(number=tempo))
+  out_stream.insert(0.0, tempo.MetronomeMark(number=init_tempo))
 
   # Save audio stream to fine
   mf = midi.translate.streamToMidiFile(out_stream)
@@ -137,7 +137,7 @@ if __name__ == '__main__':
   model = load_model("runs/improvise_RNN_190515-100339/model-128.pt")
   seqs = generate_sequence(model, 30)
   print(seqs)
-  indices_to_midi(seqs, save_path='output/my_music.mid', tempo=130)
+  indices_to_midi(seqs, save_path='output/my_music.mid', init_tempo=130)
 
   # to generate random sequence
   # seq_rand = list(np.random.randint(low=0, high=N_DICT, size=(50)))
