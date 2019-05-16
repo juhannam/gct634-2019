@@ -98,3 +98,7 @@ You should submit your Python code (.py files) and homework report (.pdf file) t
 ## Notes
 * You can you merge training and validation sets into a single training set (as in HW1). However, you should report both validation and test accuracy to prove that you chose the best model without using the test set.  
 
+
+## Credit
+Thie homework was implemented by Jongpil Lee and Soonbeom Choi in the KAIST Music and Audio Computing Lab.
+
