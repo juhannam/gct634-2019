@@ -6,13 +6,14 @@ Recurrent Neural Network(RNN) is a wildly used neural network architecture for m
 * Getting familiar with the RNN architecture.
 
 ## Dataset
-We will use very tiny dataset made with only one MIDI file (data/original_metheny.mid). Instead of using musical notes directly, we will use high-level representations that encode musical features of jazz music (chord progression, beats, and so on) in the input as a dictionary. As a result, 60 integer sequences made of length of 30 are generated from the data MIDI. Each integer indicates the index of encoding dictionary. The number of dictionary is 78 (constants.N_DICT). Index==78(79th index) is start token, thus will be only appear at the beginning of each sequence (model does not have to predict it). You can check the first sequence of dataset as follow. However, you don't have to know about its meaning for this homework.
+We will use very tiny dataset made with only one MIDI file (data/original_metheny.mid). Instead of using musical notes directly, we will use high-level representations that encode musical features of jazz music (chord progression, beats, and so on) in the input as a dictionary. As a result, 60 integer sequences made of length of 30 are generated from the data MIDI. Each integer indicates the index of encoding dictionary. The number of dictionary is 78 (constants.N_DICT). You can check the first sequence of dataset as follow. However, you don't have to know about its meaning for this homework.
 ```
 $ python dataloader.py
 tensor([78, 18, 10, 61, 64, 41, 26, 41, 77, 32, 46, 47, 37, 38, 26, 15, 59, 48,
          3, 55, 16, 55, 74,  5, 52, 29, 67, 77, 46, 12])
 
 ```
+Index==78(79th index) is a dummy, and will be only appear at the beginning of each sequence (model does not have to predict it). 
 
 If you are curious about the encoding, you can get some hints by looking at the dictionaries (uncomment codes in dataloader). 
 ```
