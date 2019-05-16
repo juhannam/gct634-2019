@@ -60,6 +60,15 @@ $ python train.py
 Blah
 ```
 
+## Listening to the Music
+In order to listen to the music, you should synthesize sound from the MIDI. The followings are the options on different OS platforms: 
+
+* Windows Media player (Windows only)
+* Garageband (MacOS only)
+* [FluidSynth](http://www.fluidsynth.org/): software library (Windows, MacOS, Linux)
+* [Timidity++](http://timidity.sourceforge.net/): software library (Windows, MacOS, Linux)
+
+
 ## Deliverables
 * The completed source code files
 * The generated MIDI file
