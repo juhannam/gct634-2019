@@ -6,7 +6,7 @@ from torch.optim.lr_scheduler import StepLR
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from improvise_rnn import *
+from utils import summary, cycle
 import rnn, dataloader
 import torch.nn as nn
 
