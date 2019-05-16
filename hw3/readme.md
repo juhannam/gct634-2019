@@ -81,4 +81,10 @@ The homework was based on the following examples and we heaviliy used the existi
 * [deepjazz](https://github.com/evancchow/jazzml)
 * [jazzml](https://github.com/evancchow/jazzml)
 
+## Credit
+Thie homework was implemented by Taegyun Kwon in the KAIST Music and Audio Computing Lab.
+
+
+
+
 
