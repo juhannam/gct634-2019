@@ -33,19 +33,26 @@ def generate_sequence(model, sequence_length):
     hidden = init_hidden
     output = init_output
     # TODO: Fill in below
+    # make empty list where output will be gathered
     outputs = None
 
     for step in range(sequence_length - 1):
       # TODO: Fill in below
       pred, hidden = None
 
-      # TODO: Fill in below
-      # Hint: output: torch.LongTensor([index]). index=index of largest value in pred.
-      output = None
+      #######################################
+      # we changed here to get better output results. (argmax sampling -> random sampling)
+      # if you are interested, change this into argmax, and see the difference.
+      # output = None  <- before
+
+      out_dist = pred.data.view(-1).exp()
+      output = torch.multinomial(out_dist, 1)
+      #######################################
 
       outputs.append(output.cpu().numpy()[0])
 
     # TODO: Fill in below
+    # return generated sequence
     return None
 
 
