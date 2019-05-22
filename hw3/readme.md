@@ -105,6 +105,14 @@ The homework was based on the following examples and we heaviliy used the existi
 * [deepjazz](https://github.com/jisungk/deepjazz)
 * [jazzml](https://github.com/evancchow/jazzml)
 
+
+## Other examples
+If you are interested, there are other examples you can try.
+
+* [char-rnn](https://github.com/spro/char-rnn.pytorch): Write Shakesperare-like sentences
+* [performance-rnn](https://magenta.tensorflow.org/performance-rnn) : Generating classical music midi note sequence. It was actually the 3rd homework(this!), but replaced because of huge training time.
+
+
 ## Credit
 Thie homework was implemented by Taegyun Kwon in the KAIST Music and Audio Computing Lab.
 
