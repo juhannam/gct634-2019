@@ -55,7 +55,7 @@ def train(logdir, model_name, iterations, checkpoint_interval, batch_size, tempe
         scheduler.step()
         optimizer.zero_grad()
 
-        batch = batch.to(device)  # shape of (batch_size, n_steps)
+        batch = batch.to(device)  # shape of (batch_size, sequence_length)
 
         c_0, h_0 = model.init_hidden(batch.shape[0])
         c_0 = c_0.to(device)
@@ -67,14 +67,14 @@ def train(logdir, model_name, iterations, checkpoint_interval, batch_size, tempe
         hidden = init_hidden
         loss = 0.0
 
-        for step in range(batch.shape[1] - 1):  # n_steps - 1
+        for step in range(batch.shape[1] - 1):  # sequence_length - 1
           # TODO: Fill in below
-          # Forward model.
-          # x=semgent of batch, corresponds to step,
-          # hidden=state of hidden nodes of last/or initial step
-          pred, hidden = model(x=None, hidden=None)
+          # run a step of training model.
+          # x = semgent of batch, corresponds to current step. shape of (batch_size, 1)
+          pred, hidden = model(x=None, hidden=hidden)
 
           # TODO: Fill in below
+          # calcuate loss between prediction and the values of next step.
           # Hint: use criterion. See torch.nn.NLLLoss() function
           loss += None
 
